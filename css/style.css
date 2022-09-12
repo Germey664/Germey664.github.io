@@ -1,0 +1,460 @@
+body{
+	font-size: Arial, sans-serif;
+}
+header{
+	height: 8%;
+}
+nav{
+	width: 100%;
+	height: 100%;
+	background: #344052;
+	color: white;
+}
+.logo{
+	font-size: 20px;
+	line-height: 8vh;
+	padding-left: 20%;
+	float: left;
+	height: 100%;
+	width: 50%;
+	
+}
+.menu{
+	float: left;
+	padding-left: 0%;
+	width: 50%;
+}
+.menu li{
+	float: left;
+	line-height: 8vh;
+	margin-right: 2%;
+	font-size: 10px; 
+}
+.titleContener{
+	height: 92vh;
+	
+	width: 100%;
+
+	
+	background: url(../img/boy.jpg) 90% 100%/ auto 90% no-repeat, url(../img/fon.jpg) center /100% 100% no-repeat ;
+}
+.titleContenerDiv{
+	float: left;
+	text-align: center;
+	margin-left: 20.8%;
+	margin-top: 20%;
+	width: 30%;
+	height: 20%
+}
+.titleContener h1{
+	font-weight: bold;
+	font-size: 8vh;
+	color: #2c384a;
+}
+.titleContener h4{
+	color: #79818d;
+	margin-top: 5%;
+	font-size: 2vh;
+}
+.titleContener input{
+	margin-top: 12%;
+	text-align: center;
+	border: 2px solid #79818d;
+	color: #79818d;
+	background: none;
+	border-radius: 5px;
+	height: 24%;
+	padding-left: 2%;
+	padding-right: 2%;
+	font-size: 3vh;
+	margin-left: 4%;
+}
+.myInfo{
+	width: 46%;
+	height: 85vh;
+	text-align: center;
+	margin-left: 26%
+}
+.myInfo h2{
+	font-size: 3vh;
+	font-weight: bold;
+	margin-top: 4%;
+	margin-bottom: 4%;
+	color: #263244;
+	text-decoration: solid underline #d17700 6px;
+
+}
+.myInfo p{
+	font-size: 2.2vh;
+	text-align: left;
+	margin-bottom: 5%;
+	color: #3f495a;
+}
+.imageRadius{
+	width: 23vh; 
+	height: 23vh;
+	margin-left: 38.3%;
+	margin-bottom: 5%;
+	background: url(../img/myInfoPhoto.jpg) 0 0/ 100% 100% no-repeat;
+}
+.myInfo input{
+	margin-top: 4%;
+	margin-left: 4%;
+	text-align: center;
+	border: 2px solid #79818d;
+	color: #79818d;
+	background: none;
+	border-radius: 5px;
+	height: 5%;
+	padding-left: 3%;
+	padding-right: 1%;
+	font-size: 2.5vh;
+	background: url(../img/MyInfoButtonImage.jpg) 2% 45% / auto 50% no-repeat;
+	
+}
+.mySkills{
+	width: 100%;
+	height: 70vh;
+	text-align: center;
+	
+	background: url(../img/mySkillsImageBk.jpg) 0 0 / 100% 100% no-repeat;
+}
+.mySkills div{
+	float: left;
+	width: 100%;
+	height: 55%;
+}
+.mySkills  h2{
+	margin-top: 6%;
+	margin-bottom: 8%;
+	font-size: 3vh;
+	font-weight: bold;
+	color: #263244;
+	text-decoration: solid underline #d17700 6px;
+}
+.mySkills ul{
+	width: 60%;
+	height:40%;
+	margin-left: 22%;
+}
+.mySkills li{
+	float: left;
+	width: 20%;
+	padding-top: 10%;
+	margin-right: 5%;
+}
+.mySkillsHeading{
+	color: #cf7600;
+	font-size: 2.7vh;
+	margin-bottom: 7%;
+}
+.mySkillsText{
+	color: #3f495a;
+	font-size: 2.1vh;
+}
+#mySkillsLi1{
+	background: url(../img/MySkilsImage1.png) 50% 0 / 40% auto no-repeat;
+}
+#mySkillsLi2{
+	background: url(../img/MySkilsImage2.png) 50% 0 / 40% auto no-repeat;
+}
+#mySkillsLi3{
+	background: url(../img/MySkilsImage3.png) 50% 0 / 40% auto no-repeat;
+}
+#mySkillsLi4{
+	margin-right: 0;
+	background: url(../img/MySkilsImage4.png) 50% 0 / 40% auto no-repeat;
+}
+.cases{
+	text-align: center;
+	width: 61%;
+	height: 120vh;
+	margin-left: 19%;
+}
+.cases>div{
+	float:left;
+	width: 100%;
+	height:100%;
+}
+.cases h2{
+	margin-top: 6%;
+	margin-bottom: 4%;
+	font-size: 3vh;
+	font-weight: bold;
+	color: #263244;
+	text-decoration: solid underline #d17700 6px;
+}
+#casesHadingP{
+	font-size: 2.2vh;
+	margin-bottom: 4%;
+	color: #384354;
+}
+#casesImageMain{
+	width: 100%;
+	height:65vh;
+	background: url(../img/CasesImageMain.jpg) 0 0 / 100% auto no-repeat;
+}
+.casesInfo{
+	float: left;
+	text-align: left;
+	color: #384354;
+}
+#casesInfo1{
+	width: 30%;
+	float: left;
+}
+#casesInfo1 h3{
+	font-size: 2.4vh;
+	font-weight: bold;
+	margin-bottom: 2%;
+}
+
+#casesInfo1 p{
+	font-size: 2vh;
+	margin-bottom: 2%;
+
+}
+#casesInfo1 input{
+	margin-top: 5%;
+	background-color: #63b5ae;
+	color: white;
+	font-size: 2.3vh;
+	font-weight: bold;
+	border-radius: 3px;
+	height: 9%;
+	padding-left: 8%;
+	padding-right: 8%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+#casesInfo2{
+	width: 60%;
+	float:left;
+}
+#casesInfo2 h4{
+	font-size: 2.3vh;
+	font-weight: bold;
+	margin-bottom: 2%;
+}
+#casesInfo2 p{
+	font-size: 2.3vh;
+	margin-bottom: 2%;
+}
+.cost{
+	width:46%;
+	height: 80vh;
+	margin-left: 27%;
+}
+.costBlock{
+	float: left;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	color: #1c2534;
+}
+.costBlock h2{
+	font-size: 5vh;
+	font-weight: bold;
+	margin-bottom: 2%;
+}
+.costBlock h3{
+	font-size: 2.9vh;
+	font-weight: bold;
+	margin-bottom: 2%;
+}
+.costBlock>div{
+	text-align: left;
+	width: 100%;
+	height:20%;
+}
+.costBlock select{
+	text-align: left;
+	width: 100%;
+	height:45%;
+	background-color: #eeeeee;
+	color: #737373;
+}
+.costBlock h4{
+	text-align: left;
+	font-size: 2.6vh;
+	width: 100%;
+	height:30%;
+}
+.statistics{
+	width: 100%;
+	height: 55vh;
+	color: #1c2534;
+	background: url(../img/statisticsImageMain.jpg) 0 0 / 100% auto no-repeat;
+}
+.statisticsBlock{
+
+	width: 55%;
+	height: 100%;
+	float: left;
+	margin-left: 23%;
+	text-align: center;
+}
+.statisticsBlock h2{
+	margin-top: 6%;
+	margin-bottom: 4%;
+	font-size: 3vh;
+	font-weight: bold;
+	color: #263244;
+	text-decoration: solid underline #d17700 6px;
+}
+.statisticsBlock ul{
+	float: left;
+	width: 100%;
+	height: 50%;
+	margin-top: 10%;
+}
+.statisticsBlock li{
+	float: left;
+	padding-top: 10%;
+	width: 25%;
+	height: 40%;
+}
+.statisticsBlock h3{
+	font-size: 4.2vh;
+	margin-bottom: 5%;
+	font-weight: bold;
+	color: #1c2534;
+}
+.statisticsBlock h4{
+	font-size: 2vh;
+	color: #1c2534;
+}
+#statisticsBlockLi1{
+	background: url(../img/statisticsBlockLi1.png) 50% 0 / 30% auto no-repeat;
+}
+#statisticsBlockLi2{
+	background: url(../img/statisticsBlockLi2.png) 50% 0 / 30% auto no-repeat;
+}
+#statisticsBlockLi3{
+	background: url(../img/statisticsBlockLi3.png) 50% 0 / 30% auto no-repeat;
+}
+#statisticsBlockLi4{
+	background: url(../img/statisticsBlockLi4.png) 50% 0 / 30% auto no-repeat;
+}
+.reviews{
+	width: 100%;
+	height:60vh;
+}
+.reviewsBlock{
+	float: left;
+	text-align: center;
+	margin-left: 32%;
+	width:35%;
+	height: 100%;
+}
+.reviewsBlock h2{
+	margin-top: 6%;
+	margin-bottom: 10%;
+	font-size: 3vh;
+	font-weight: bold;
+	color: #263244;
+	text-decoration: solid underline #d17700 6px;
+}
+#reviewsImageMain{
+	width: 15vh; 
+	height: 15vh;
+	margin-left: 41%;
+	margin-bottom: 6%;
+	background: url(../img/reviewsImageMain.jpg) 0 0/ 100% 100% no-repeat;
+}
+.reviewsBlock p{
+	margin-bottom: 10%;
+	font-size: 2vh;
+	color: #263244;
+}
+.reviewsBlock bold{
+	font-weight: bold;
+}
+.MYCONTACTS{
+	width: 100%;
+	height: 85vh;
+	color: white;
+	background: url(../img/MYCONTACTSImage.jpg) 0 0 / 100% auto no-repeat;
+}
+.MYCONTACTSBlock{
+	float: left;
+	text-align: center;
+	margin-left: 32%;
+	width:35%;
+	height: 100%;
+}
+.MYCONTACTSBlock h2{
+	margin-top: 6%;
+	margin-bottom: 10%;
+	font-size: 3vh;
+	font-weight: bold;
+	text-decoration: solid underline #d17700 6px;
+}
+.MYCONTACTSBlock p{
+	margin-bottom: 10%;
+	font-size: 1.8vh;
+}
+.MYCONTACTSBlock ul{
+	text-align: center;
+	float: left;
+	width: 100%;
+	height: 16%;
+}
+.MYCONTACTSBlock li{
+	font-size: 1.8vh;
+	float: left;
+	padding-top: 10%;
+	margin-left: 6%;
+	width: 25%;
+	height: 40%;
+}
+#MYCONTACTSBlockLi1{
+	background: url(../img/MYCONTACTSBlockLi1.png) 50% 0 / 18% auto no-repeat;
+}
+#MYCONTACTSBlockLi2{
+	background: url(../img/MYCONTACTSBlockLi2.png) 50% 0 / 18% auto no-repeat;
+}
+#MYCONTACTSBlockLi3{
+	background: url(../img/MYCONTACTSBlockLi3.png) 50% 0 / 18% auto no-repeat;
+}
+.MYCONTACTSBlock h3{
+	margin-bottom: 5%;
+	font-size: 2.3vh;
+}
+.MYCONTACTSBlock form{
+	width: 100%;
+	height:40%;
+	float: left
+}
+#MYCONTACTSButton1{
+	width: 48%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-left: 1%;
+	margin-right: 3%;
+}
+#MYCONTACTSButton2{
+	width: 48%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-left: 1%;
+}
+#MYCONTACTSButton3{
+	width: 48%;
+	background: none;
+	border: 2px solid white;
+	color: white;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+#MYCONTACTSArea1{
+	margin-top: 3%;
+	margin-bottom: 3%;
+	width: 100%;
+	height: 30%;
+}
+.Maps{
+	width: 100%;
+	height: 30vh;
+	background: url(../img/MapsImage.jpg) 0 0 / 100% auto no-repeat;
+}
