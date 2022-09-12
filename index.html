@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Андрей Браун _Web_ Разраюотчик</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
@@ -22,13 +24,16 @@
     </header>
     <div class="main">
         <div class="titleContener">
-            <h1>Привет. <br> Я Андрей Браун</h1>
-            <h4>Фулл стек веб-разработчик</h4>
-            <input type="submit" value="Обо мне">
-            <input type="submit" value="Мои работы">
+            <div class="titleContenerDiv">
+                <h1>Привет. <br> Я Андрей Браун</h1>
+                <h4>Фулл стек веб - разработчик и Android - разработчик</h4>
+                <input type="submit" value="Обо мне">
+                <input type="submit" value="Мои работы">
+            </div>
         </div>
         <div class="myInfo">
             <h2>ОБО МНЕ</h2>
+            <div class=imageRadius></div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
 facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
@@ -37,31 +42,29 @@ facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commod
         </div>
         <div class="mySkills">
             <div>
-                 <h2>ЧТО Я УМЕЮ</h2>
-            </div>
-            <div>
+                <h2>ЧТО Я УМЕЮ</h2>
                 <ul>
-                    <li>
-                        <p>Веб-дизайн</p>
-                        <p>Lorem ipsum dolor sit amet placerat
+                    <li id="mySkillsLi1">
+                        <p class="mySkillsHeading">Веб-дизайн</p>
+                        <p class="mySkillsText">Lorem ipsum dolor sit amet placerat
     facilisis felis mi in tempus eleifend
     pellentesque natoque etiam. </p>
                     </li>
-                    <li>
-                        <p>Разработка</p>
-                        <p>Lorem ipsum dolor sit amet placerat
+                    <li id="mySkillsLi2">
+                        <p class="mySkillsHeading">Разработка</p>
+                        <p class="mySkillsText">Lorem ipsum dolor sit amet placerat
     facilisis mi in tempus eleifend 
     pellentesque.</p>
                     </li>
-                    <li>
-                        <p>СЕО-Оптимизация</p>
-                        <p>Lorem ipsum dolor sit amet placerat
+                    <li id="mySkillsLi3">
+                        <p class="mySkillsHeading">СЕО-Оптимизация</p>
+                        <p class="mySkillsText">Lorem ipsum dolor sit amet placerat
     facilisis felis mi in tempus eleifend
     pellentesque natoque etiam.</p>
                     </li>
-                    <li>
-                        <p>Маркетинг</p>
-                        <p>Lorem ipsum dolor sit amet placerat
+                    <li id="mySkillsLi4">
+                        <p class="mySkillsHeading">Маркетинг</p>
+                        <p class="mySkillsText">Lorem ipsum dolor sit amet placerat
     facilisis felis mi in tempus eleifend
     pellentesque natoque .</p>
                     </li>
@@ -71,32 +74,29 @@ facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commod
         
         <div class="cases">
             <div>
-                 <h2>КЕЙСЫ</h2>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed Dapibus leo nec ornare diamcoccodo nibh ante facilisis.</p>
-            </div>
-            <div>
-               <div>
-                   <div>
+                <h2>КЕЙСЫ</h2>
+                <p id = "casesHadingP">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed Dapibus leo nec ornare diamcoccodo nibh ante facilisis.</p>
+                <div id="casesImageMain"></div>
+                <div class="casesInfo">
+                   <div id="casesInfo1">
                        <h3>CLIENT:</h3>
                        <p>Какая-то компания</p>
-                   </div>
-                   <div>
                        <h3>WEBSITE:</h3>
                        <p>http://www.somedomain.com</p>
+                       <input type="submit" value="VISIT LIVE SITE">
                    </div>
-                   <input type="submit" value="VISIT LIVE SITE">
-               </div>
-               <div>
-                   <h4>Название проекта</h4>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                   <div id="casesInfo2">
+                       <h4>Название проекта</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                   </div>
                </div>
             </div>
         </div>
         <div class="cost">
-            <h2>Расчет стоимости</h2>
-            <div>
+            <div class = "costBlock">
+                <h2>Расчет стоимости</h2>
                 <div>
                     <h3>ТИП САЙТА</h3>
                     <select name="typeSide" id="" >
@@ -128,50 +128,58 @@ facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commod
             </div>
         </div>
         <div class="statistics">
-            <h2>НЕМНОГО СТАТИСТИКИ</h2>
-            <ul>
-                <li>
-                    <h4>120</h4>
-                    <h4>СЧАСТЛИВЫХ КЛИЕНТОВ</h4>
-                </li>
-                <li>
-                    <h4>4,600</h4>
-                    <h4>ЧАСОВ РАБОТЫ</h4>
-                </li>
-                <li>
-                    <h4>340</h4>
-                    <h4>ПРОЕКТОВ ЗАВЕРШЕНО</h4>
-                </li>
-                <li>
-                    <h4>23</h4>
-                    <h4>НАГРАД ПОЛУЧЕНО</h4>
-                </li>
-            </ul>
+            <div class="statisticsBlock">
+                <h2>НЕМНОГО СТАТИСТИКИ</h2>
+                <ul>
+                    <li id="statisticsBlockLi1">
+                        <h3>120</h3>
+                        <h4>СЧАСТЛИВЫХ КЛИЕНТОВ</h4>
+                    </li>
+                    <li id="statisticsBlockLi2">
+                        <h3>4,600</h3>
+                        <h4>ЧАСОВ РАБОТЫ</h4>
+                    </li>
+                    <li id="statisticsBlockLi3">
+                        <h3>340</h3>
+                        <h4>ПРОЕКТОВ ЗАВЕРШЕНО</h4>
+                    </li>
+                    <li id="statisticsBlockLi4">
+                        <h3>23</h3>
+                        <h4>НАГРАД ПОЛУЧЕНО</h4>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="reviews">
-            <h2>ОТЗЫВЫ</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
-facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.</p>
-            <p>Михаил, Ген директор ПАО “Газпром”.</p>
+            <div class="reviewsBlock">
+                <h2>ОТЗЫВЫ</h2>
+                <div id="reviewsImageMain"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
+                facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.</p>
+                <p><bold>Михаил</bold>, Ген директор ПАО “Газпром”.</p>
+            </div>
         </div>
         <div class="MYCONTACTS">
-            <h2>МОИ КОНТАКТЫ</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leo nec ornare diamcoccodo </p>
-            <ul>
-                <li>Санкт-Петербург
-Невский проспект 11</li>
-                <li>info@companyname.com</li>
-                <li>+7 999 999-99-99</li>
-            </ul>
-            <form action="#">
+            <div class="MYCONTACTSBlock">
+                <h2>МОИ КОНТАКТЫ</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leo nec ornare diamcoccodo </p>
+                <ul>
+                    <li id="MYCONTACTSBlockLi1">Санкт-Петербург
+                    Невский проспект 11</li>
+                    <li id="MYCONTACTSBlockLi2">info@companyname.com</li>
+                    <li id="MYCONTACTSBlockLi3">+7 999 999-99-99</li>
+                </ul>
                 <h3>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h3>
-                <input type="text" placeholder="Имя">
-                <input type="text" placeholder="Email">
-                <textarea placeholder="Сообщение"></textarea>
-                <input type="submit" value="Отправить">
-                
-            </form>
+                <form action="#">
+                    <input id="MYCONTACTSButton1" type="text" placeholder="Имя">
+                    <input id="MYCONTACTSButton2" type="text" placeholder="Email">
+                    <textarea id="MYCONTACTSArea1" placeholder="Сообщение"></textarea>
+                    <input id="MYCONTACTSButton3" type="submit" value="Отправить">
+                    
+                </form>
+            </div>
         </div>
+        <div class="Maps"></div>
     </div>
 </body>
 </html>
