@@ -81,6 +81,7 @@ main{
 }
 .menu ul li a{
 	transition: color 0.5s;
+	color: white;
 	transition: transform 0.3s;
 	display: inline-block;
 	transform: scale(1);
