@@ -1,11 +1,26 @@
+@font-face {
+  font-family: 'franklin-gothic-medium';
+  src: url(../fonts/franklin-gothic-medium/franklin-gothic-medium.eot);
+  src: url(../fonts/franklin-gothic-medium/franklin-gothic-medium.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/franklin-gothic-medium/franklin-gothic-medium.ttf) format('truetype'),
+       url(../fonts/franklin-gothic-medium/franklin-gothic-medium.woff) format('woff'),
+       url(../fonts/franklin-gothic-medium/franklin-gothic-medium.woff2) format('woff2'),
+       url(../fonts/franklin-gothic-medium/franklin-gothic-medium.svg#franklin-gothic-medium) format('svg'),
+       url(../fonts/franklin-gothic-medium/franklin-gothic-medium.otf) format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
 body{
 	font-size: Arial, sans-serif;
+	font-family: 'franklin-gothic-medium';
 }
 header{
 	position: fixed;
 	z-index: 3;
 	height: 8%;
 	width: 100%;
+	top: 0;
+	left: 0;
 }
 nav{
 	width: 100%;
@@ -32,31 +47,25 @@ nav{
 	}
 }
 .logo{
-	font-size: 20px;
+	font-size: 3vh;
 	line-height: 8vh;
-	padding-left: 20%;
-	float: left;
 	height: 100%;
-	width: 50%;
+	width: 100%;
 	animation-delay: 1s;
 }
 .logo._active{
 	animation: comming 4s;
 }
-main{
-	width: 100%;
-}
 .menu{
 	float: left;
-	padding-left: 0%;
-	width: 50%;
+	width: 100%;
 }
 .menu li{
 	opacity: 0;
 	float: left;
 	line-height: 8vh;
 	margin-right: 2%;
-	font-size: 10px; 
+	font-size: 12px; 
 	
 }
 .menu li._active{
@@ -85,9 +94,7 @@ main{
 	transition: transform 0.3s;
 	display: inline-block;
 	transform: scale(1);
-}
-.menu ul li a:visited{
-	color: white;
+	text-decoration: none;
 }
 .menu ul li a:hover{
 	color: #e6a754;
@@ -96,21 +103,31 @@ main{
 .menu ul li a:active{
 	transform: scale(1.08);
 }
-.titleContener{
-	height: 92vh;
-	
+.btn-white:visited{
+	color: white;
+	font-size: 3vh;
+	height: 100%;
 	width: 100%;
-
-	
+	--bs-btn-font-size: 2rem;
+}
+main{
+	width: 100%;
+}
+.main{
+	margin-top: 8vh;
+	height: 92vh;
+	width: 100%;
+}
+.titleContener{
+	height: 100%;
+	width: 100%;
 	background: url(../img/boy.jpg) 90% 100%/ auto 90% no-repeat, url(../img/fon.jpg) center /100% 100% no-repeat ;
 }
 .titleContenerDiv{
 	opacity: 0;
 	float: left;
 	text-align: center;
-	margin-left: 20.8%;
-	margin-top: 20%;
-	width: 30%;
+	width: 100%;
 	height: 40%;
 }
 .titleContenerDiv._active{
@@ -125,13 +142,13 @@ main{
 		opacity: 0;
 	}
 	to{
-		margin-left: 20.8%;
+		margin-left: 0%;
 		opacity: 1;
 	}
 }
 .titleContener h1{
 	font-weight: bold;
-	font-size: 8vh;
+	font-size: 10vh;
 	color: #2c384a;
 }
 .titleContener h4{
@@ -163,16 +180,15 @@ main{
 	transform: scale(1.1);
 }
 .myInfo{
-	width: 46%;
+	width: 100%;
 	height: 85vh;
 	text-align: center;
-	margin-left: 26%
 }
 .myInfo h2{
 	font-size: 3vh;
 	font-weight: bold;
 	margin-top: 4%;
-	margin-bottom: 4%;
+	margin-bottom: 2%;
 	color: #263244;
 	text-decoration: solid underline #d17700 6px;
 
@@ -180,14 +196,14 @@ main{
 .myInfo p{
 	font-size: 2.2vh;
 	text-align: left;
-	margin-bottom: 5%;
+	margin-bottom: 1%;
 	color: #3f495a;
 }
 .imageRadius{
 	width: 23vh; 
 	height: 23vh;
 	margin: 0 auto;
-	margin-bottom: 5%;
+	margin-bottom: 3%;
 	transform: rotate3d(0, 1, 0, 180deg);
 	backface-visibility: hidden;
 	background: url(../img/myInfoPhoto.jpg) 0 0/ 100% 100% no-repeat;
@@ -212,7 +228,6 @@ main{
 	color: #79818d;
 	background: none;
 	border-radius: 5px;
-	height: 5%;
 	padding-left: 3%;
 	padding-right: 1%;
 	font-size: 2.5vh;
@@ -232,12 +247,7 @@ main{
 	height: 70vh;
 	text-align: center;
 	
-	background: url(../img/mySkillsImageBk.jpg) 0 0 / 100% 100% no-repeat;
-}
-.mySkills div{
-	float: left;
-	width: 100%;
-	height: 100%;
+	background: url(../img/mySkillsImageBk.jpg) 0 0 / auto 100% no-repeat;
 }
 .mySkills  h2{
 	margin-top: 6%;
@@ -247,33 +257,17 @@ main{
 	color: #263244;
 	text-decoration: solid underline #d17700 6px;
 }
-.mySkills ul{
-	width: 60%;
-	height:40%;
-	margin-left: 22%;
-}
-.mySkills li{
-	float: left;
-	width: 20%;
-	padding-top: 10%;
-	margin-right: 5%;
+
+.mySkillsLi{
+	padding-top: 15%;
 	opacity: 0;
 	transition: 0.8s;
 }
-.mySkills li:hover{
+.mySkillsLi:hover{
 	transform: translate(0, 15%) scale(1.1);
 }
 
-.mySkills li:nth-child(1)._active{
-	animation: mySkillsleftShift 2s forwards;
-}
-.mySkills li:nth-child(2){
-	animation: mySkillsleftShift 2s forwards;
-}
-.mySkills li:nth-child(3){
-	animation: mySkillsleftShift 2s forwards;
-}
-.mySkills li:nth-child(4){
+.mySkillsLi._active{
 	animation: mySkillsleftShift 2s forwards;
 }
 @keyframes mySkillsleftShift{
@@ -295,76 +289,61 @@ main{
 	color: #3f495a;
 	font-size: 2.1vh;
 }
-#mySkillsLi1{
+.mySkillsLi:nth-child(1){
 	background: url(../img/MySkilsImage1.png) 50% 0 / 40% auto no-repeat;
 }
-#mySkillsLi2{
+.mySkillsLi:nth-child(2){
 	background: url(../img/MySkilsImage2.png) 50% 0 / 40% auto no-repeat;
 }
-#mySkillsLi3{
+.mySkillsLi:nth-child(3){
 	background: url(../img/MySkilsImage3.png) 50% 0 / 40% auto no-repeat;
 }
-#mySkillsLi4{
+.mySkillsLi:nth-child(4){
 	margin-right: 0;
 	background: url(../img/MySkilsImage4.png) 50% 0 / 40% auto no-repeat;
 }
 .cases{
 	text-align: center;
-	width: 61%;
-	height: 120vh;
-	margin-left: 19%;
-}
-.cases>div{
-	float:left;
-	width: 100%;
-	height:100%;
+	height: 140vh;
 }
 .cases h2{
-	margin-top: 6%;
-	margin-bottom: 4%;
+	margin-top: 4%;
+	margin-bottom: 2%;
 	font-size: 3vh;
 	font-weight: bold;
 	color: #263244;
 	text-decoration: solid underline #d17700 6px;
 }
 #casesHadingP{
+	margin-top: 1%;
 	font-size: 2.2vh;
-	margin-bottom: 4%;
 	color: #384354;
 }
-#casesImageMain{
-	width: 100%;
-	height:65vh;
-	background: url(../img/CasesImageMain.jpg) 0 0 / 100% auto no-repeat;
-}
-.casesInfo{
-	float: left;
+.casesInfo1{
+	color: #384354;
 	text-align: left;
+}
+.casesInfo2{
 	color: #384354;
+	text-align: left;
 }
-#casesInfo1{
-	width: 30%;
-	float: left;
-}
-#casesInfo1 h3{
+.casesInfo1 h3{
 	font-size: 2.4vh;
 	font-weight: bold;
 	margin-bottom: 2%;
 }
-
-#casesInfo1 p{
+.casesInfo1 p{
 	font-size: 2vh;
 	margin-bottom: 2%;
 
 }
-#casesInfo1 input{
+.casesInfo1 input{
 	margin-top: 5%;
 	background-color: #63b5ae;
 	color: white;
 	font-size: 2.3vh;
 	font-weight: bold;
 	border-radius: 3px;
-	height: 9%;
 	padding-left: 8%;
 	padding-right: 8%;
 	padding-top: 3%;
@@ -372,70 +351,74 @@ main{
 	transform: scale(1);
 	transition: 0.6s;
 }
-#casesInfo1 input:hover{
+.casesInfo1 input:hover{
 	background-color: #84ede4;
 	transform: translate(0, 5%);
 }
-#casesInfo1 input:active{
+.casesInfo1 input:active{
 	transform: scale(1.06);
 }
-#casesInfo2{
-	width: 60%;
-	float:left;
-}
-#casesInfo2 h4{
-	font-size: 2.3vh;
+.casesInfo2 h4{
+	font-size: 2.8vh;
 	font-weight: bold;
 	margin-bottom: 2%;
 }
-#casesInfo2 p{
+.casesInfo2 p{
 	font-size: 2.3vh;
 	margin-bottom: 2%;
 }
 .cost{
-	width:46%;
-	height: 80vh;
-	margin: 0 auto;
+	height: 90vh;
 }
-.costBlock{
-	float: left;
-	text-align: center;
-	width: 100%;
-	height: 100%;
-	color: #1c2534;
-}
-.costBlock h2{
+.cost h2{
 	font-size: 5vh;
 	font-weight: bold;
-	margin-bottom: 2%;
+	margin-bottom: 1%;
 }
-.costBlock h3{
+.cost h3{
 	font-size: 2.9vh;
 	font-weight: bold;
-	margin-bottom: 2%;
 }
-.costBlock>div{
+.cost select{
 	text-align: left;
+	margin-bottom: 1%;
 	width: 100%;
-	height:20%;
-}
-.costBlock select{
-	text-align: left;
-	width: 100%;
-	height:45%;
+	height: 50%;
 	background-color: #eeeeee;
 	color: #737373;
 	transition: 0.2s;
+	font-size: 2.1vh;
 }
-.costBlock select:hover{
+.cost select:hover{
 	background-color: #f8e9d5; 
 }
 
-.costBlock h4{
+.cost h4{
 	text-align: left;
 	font-size: 2.6vh;
 	width: 100%;
-	height:30%;
+}
+.cost input{
+	background-color: #63b5ae;
+	color: white;
+	font-size: 2.3vh;
+	font-weight: bold;
+	border-radius: 3px;
+	width: 100%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	transform: scale(1);
+	transition: 0.6s;
+}
+.cost input:hover{
+	background-color: #84ede4;
+	transform: translate(0, 5%);
+}
+.cost input:active{
+	transform: scale(1.06);
+}
+.cost .row{
+	height:16%;
 }
 .statistics{
 	width: 100%;
@@ -447,47 +430,36 @@ main{
 .statisticsParalax{
 	width: 100%;
 	height: 100%;
-	/*background: url(../img/statisticsImageMain.jpg) 0 0 / 100% auto no-repeat;
-	z-index: 1;
-	transform: translate(0px, 0px);
-	position: absolute;*/
-
 }
 .parallax-window{
 	width: 100%;
 	height: 100%;
 }
 .statisticsBlock{
-
-	width: 55%;
 	height: 100%;
-	float: left;
-	margin-left: 23%;
 	text-align: center;
 }
 .statisticsBlock h2{
 	margin-top: 6%;
+	text-align: center;
 	margin-bottom: 4%;
 	font-size: 3vh;
 	font-weight: bold;
 	color: #263244;
 	text-decoration: solid underline #d17700 6px;
 }
-.statisticsBlock ul{
-	float: left;
+.statisticsBlockUl{
 	width: 100%;
 	height: 50%;
-	margin-top: 10%;
+	margin-top: 5%;
 	transform: translateZ(-1px);
 }
-.statisticsBlock li{
-	float: left;
+.statisticsBlockLi{
 	padding-top: 10%;
-	width: 25%;
 	height: 40%;
 	transition: 0.6s;
 }
-.statisticsBlock li:hover{
+.statisticsBlockLi:hover{
 	transform: translate(0, 10%) scale(1.05);
 }
 .statisticsBlock h3{
@@ -500,16 +472,16 @@ main{
 	font-size: 2vh;
 	color: #1c2534;
 }
-#statisticsBlockLi1{
+.statisticsBlockLi:nth-child(1){
 	background: url(../img/statisticsBlockLi1.png) 50% 0 / 30% auto no-repeat;
 }
-#statisticsBlockLi2{
+.statisticsBlockLi:nth-child(2){
 	background: url(../img/statisticsBlockLi2.png) 50% 0 / 30% auto no-repeat;
 }
-#statisticsBlockLi3{
+.statisticsBlockLi:nth-child(3){
 	background: url(../img/statisticsBlockLi3.png) 50% 0 / 30% auto no-repeat;
 }
-#statisticsBlockLi4{
+.statisticsBlockLi:nth-child(4){
 	background: url(../img/statisticsBlockLi4.png) 50% 0 / 30% auto no-repeat;
 }
 .reviews{
@@ -529,15 +501,12 @@ main{
 	}
 }
 .reviewsBlock{
-	float: left;
 	text-align: center;
-	margin-left: 32%;
-	width:35%;
 	height: 100%;
 }
 .reviewsBlock h2{
 	margin-top: 6%;
-	margin-bottom: 10%;
+	margin-bottom: 5%;
 	font-size: 3vh;
 	font-weight: bold;
 	color: #263244;
@@ -547,7 +516,7 @@ main{
 	width: 15vh; 
 	height: 15vh;
 	margin: 0 auto;
-	margin-bottom: 6%;
+	margin-bottom: 2%;
 	background: url(../img/reviewsImageMain.jpg) 0 0/ 100% 100% no-repeat;
 }
 .reviewsBlock p{
@@ -562,62 +531,50 @@ main{
 	width: 100%;
 	height: 85vh;
 	color: white;
-	background: url(../img/MYCONTACTSImage.jpg) 0 0 / 100% auto no-repeat;
+	background: url(../img/MYCONTACTSImage.jpg) 0 0 / auto 100% no-repeat;
 }
 .MYCONTACTSBlock{
-	float: left;
 	text-align: center;
-	margin-left: 32%;
-	width:35%;
 	height: 100%;
 }
 .MYCONTACTSBlock h2{
-	margin-top: 6%;
-	margin-bottom: 10%;
+	margin-top: 4%;
+	margin-bottom: 2%;
 	font-size: 3vh;
 	font-weight: bold;
 	text-decoration: solid underline #d17700 6px;
 }
 .MYCONTACTSBlock p{
-	margin-bottom: 10%;
+	margin-bottom: 5%;
 	font-size: 1.8vh;
 }
-.MYCONTACTSBlock ul{
-	text-align: center;
-	float: left;
-	width: 100%;
-	height: 16%;
-}
-.MYCONTACTSBlock li{
+.MYCONTACTSBlockLi{
 	opacity: 0;
 	font-size: 1.8vh;
-	float: left;
-	padding-top: 10%;
-	margin-left: 6%;
-	width: 25%;
+	padding-top: 6%;
 	height: 40%;
 	transition: 0.8s;
 }
-.MYCONTACTSBlock li:hover{
+.MYCONTACTSBlockLi:hover{
 	transform: translate(0, 10%) scale(1.05);
 }
-#MYCONTACTSBlockLi1{
+.MYCONTACTSBlockLi:nth-child(1){
 	background: url(../img/MYCONTACTSBlockLi1.png) 50% 0 / 18% auto no-repeat;
 }
-#MYCONTACTSBlockLi1._active{
+.MYCONTACTSBlockLi:nth-child(1)._active{
 	animation: MYCONTACTSBlockSubmmit 2.6s forwards;
 }
 
-#MYCONTACTSBlockLi2{
+.MYCONTACTSBlockLi:nth-child(2){
 	background: url(../img/MYCONTACTSBlockLi2.png) 50% 0 / 18% auto no-repeat;
 }
-#MYCONTACTSBlockLi2._active{
+.MYCONTACTSBlockLi:nth-child(2)._active{
 	animation: MYCONTACTSBlockSubmmit 1s forwards;
 }
-#MYCONTACTSBlockLi3{
+.MYCONTACTSBlockLi:nth-child(3){
 	background: url(../img/MYCONTACTSBlockLi3.png) 50% 0 / 18% auto no-repeat;
 }
-#MYCONTACTSBlockLi3._active{
+.MYCONTACTSBlockLi:nth-child(3)._active{
 	animation: MYCONTACTSBlockSubmmit 1.8s forwards;
 }
 @keyframes MYCONTACTSBlockSubmmit{
@@ -629,37 +586,31 @@ main{
 	}
 }
 .MYCONTACTSBlock h3{
-	margin-bottom: 5%;
-	font-size: 2.3vh;
+	margin-bottom: 1%;
+	font-size: 1.8vh;
 }
 .MYCONTACTSBlock form{
 	width: 100%;
-	height:40%;
-	float: left
+	height:100%;
 }
 .MYCONTACTSBlock input:hover{
 	background-color: #f8e9d5;
 }
-#MYCONTACTSButton1{
-	width: 48%;
-	padding-top: 1%;
-	padding-bottom: 1%;
-	padding-left: 1%;
-	margin-right: 3%;
+.MYCONTACTSButton{
+	font-size: 2vh;
+	width: 100%;
+	height: 100%;
 }
-#MYCONTACTSButton2{
-	width: 48%;
-	padding-top: 1%;
-	padding-bottom: 1%;
-	padding-left: 1%;
+.MYCONTACTSButtonRow{
+		height: 10%;
+}
+.MYCONTACTSButtonArea{
+		height: 25%;
 }
 #MYCONTACTSButton3{
-	width: 48%;
 	background: none;
 	border: 2px solid white;
 	color: white;
-	padding-top: 1%;
-	padding-bottom: 1%;
 	transition: 0.4s;
 }
 #MYCONTACTSButton3:hover{
@@ -667,17 +618,137 @@ main{
 	color: #d27f00;
 	transform:translate(0, 5%);
 }
-#MYCONTACTSArea1{
-	margin-top: 3%;
-	margin-bottom: 3%;
+.MYCONTACTSArea{
 	width: 100%;
-	height: 30%;
+	font-size: 2vh;
+	height: 100%;
 }
-#MYCONTACTSArea1:hover{
+.MYCONTACTSArea:hover{
 	background-color: #f8e9d5;
 }
 .Maps{
 	width: 100%;
 	height: 30vh;
-	background: url(../img/MapsImage.jpg) 0 0 / 100% auto no-repeat;
+	background: url(../img/MapsImage.jpg) 0 0 / auto 100% no-repeat;
+}
+@media(max-width: 991px){
+	.logo{
+		font-size: 2vh;
+	}
+	.titleContenerDiv{
+		position: relative;
+		z-index: 2;
+	}
+	.titleContener h1{
+		font-size: 7vh;
+		color: white;
+	}
+	.titleContener h4{
+		color: white;
+	}
+	.titleContener input{
+		color: white;
+		font-size: 2vh;
+		border: 2px solid white;
+	}
+	.titleContener input:hover{
+		background: none;
+	}
+	.main{
+		position: relative;
+	}
+	.main::after{
+		content: "";
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		position: absolute;
+		background-color: rgb(0,0,0,0.4);
+		z-index: 1;
+	}
+	.imageRadius{
+		width: 17vh;
+		height: 17vh;
+	}
+	.myInfo h2{
+		font-size: 2.5vh;
+	}
+	.myInfo input{
+		padding-left: 8%;
+	}
+	.mySkills h2{
+		font-size: 2.5vh;
+	}
+	.mySkillsText{
+		font-size: 1.7vh;
+	}
+	.cases h2{
+		font-size: 2.5vh;
+	}
+	.cases{
+		height: 80vh;
+	}
+	.casesInfo1 p{
+		font-size: 1.5vh;
+	}
+	.casesInfo2 p{
+		font-size: 2vh;
+	}
+	#casesHadingP{
+		font-size: 1.5vh;
+	}
+	.cost h2{
+		font-size: 2.5vh;
+	}
+	.cost{
+		height: 70vh;
+	}
+	.cost input{
+		font-size: 1.8vh;
+	}
+	.cost h3{
+		font-size: 2vh;
+		margin-top: 1%;
+	}
+	.cost select{
+		font-size: 1.7vh;
+	}
+	.statistics{
+		height: 70vh;
+	}
+	.statistics h2{
+		margin-top: 10%;
+		font-size: 2.5vh;
+	}
+	.statisticsBlockLi {
+	    padding-top: 20%;
+	    height: 60%;
+	}
+	.statisticsBlockUl{
+		margin-top: 10%;
+
+	}
+	.reviewsBlock h2{
+		font-size: 2.5vh;
+	}
+	.MYCONTACTSBlock{
+
+	}
+	.MYCONTACTSBlock h2{
+		margin-top: 2%;
+		margin-bottom: 2%;
+		font-size: 2.5vh;
+	}
+	.MYCONTACTSBlock p{
+		margin-bottom: 1%;
+		font-size: 1.2vh;
+	}
+	.MYCONTACTSBlockLi{
+		font-size: 1.2vh;
+		padding-top: 12%;
+		height: 40%;
+		transition: 0.8s;
+	}
+
 }
