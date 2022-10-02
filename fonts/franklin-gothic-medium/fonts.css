@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'franklin-gothic-medium';
+  src: url(./franklin-gothic-medium.eot);
+  src: url(./franklin-gothic-medium.eot?#iefix) format('embedded-opentype'),
+       url(./franklin-gothic-medium.ttf) format('truetype'),
+       url(./franklin-gothic-medium.woff) format('woff'),
+       url(./franklin-gothic-medium.woff2) format('woff2'),
+       url(./franklin-gothic-medium.svg#franklin-gothic-medium) format('svg'),
+       url(./franklin-gothic-medium.otf) format('otf');
+}
