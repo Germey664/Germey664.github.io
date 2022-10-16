@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Андрей Браун _Web_ Разраюотчик</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,12 +27,12 @@
                     <div class="col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">
                         <div class="menu">
                             <ul>
-                                <li class="animItems"><a href="#">ОБО МНЕ</a></li>
-                                <li class="animItems"><a href="#">УСЛУГИ</a></li>
-                                <li class="animItems"><a href="#">КЕЙСЫ</a></li>
-                                <li class="animItems"><a href="#">ПРАЙС</a></li>
-                                <li class="animItems"><a href="#">ОТЗЫВЫ</a></li>
-                                <li class="animItems"><a href="#">МОИ КОНТАКТЫ</a></li>
+                                <li class="animItems"><a href="#myInfoSection">ОБО МНЕ</a></li>
+                                <li class="animItems"><a href="#mySkillsSection">УСЛУГИ</a></li>
+                                <li class="animItems"><a href="#casesSection">КЕЙСЫ</a></li>
+                                <li class="animItems"><a href="#costSection">ПРАЙС</a></li>
+                                <li class="animItems"><a href="#reviewsSection">ОТЗЫВЫ</a></li>
+                                <li class="animItems"><a href="#MYCONTACTSSection">МОИ КОНТАКТЫ</a></li>
                             </ul>
                         </div>
                     </div>
@@ -43,12 +43,12 @@
                           </a>
 
                           <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">ОБО МНЕ</a></li>
-                            <li><a class="dropdown-item" href="#">УСЛУГИ</a></li>
-                            <li><a class="dropdown-item" href="#">КЕЙСЫ</a></li>
-                            <li><a class="dropdown-item" href="#">ПРАЙС</a></li>
-                            <li><a class="dropdown-item" href="#">ОТЗЫВЫ</a></li>
-                            <li><a class="dropdown-item" href="#">МОИ КОНТАКТЫ</a></li>
+                            <li class="animItems"><a href="#myInfoSection">ОБО МНЕ</a></li>
+                                <li class="animItems"><a href="#mySkillsSection">УСЛУГИ</a></li>
+                                <li class="animItems"><a href="#casesSection">КЕЙСЫ</a></li>
+                                <li class="animItems"><a href="#costSection">ПРАЙС</a></li>
+                                <li class="animItems"><a href="#reviewsSection">ОТЗЫВЫ</a></li>
+                                <li class="animItems"><a href="#MYCONTACTSSection">МОИ КОНТАКТЫ</a></li>
                           </ul>
                         </div>
                     </div>
@@ -57,8 +57,8 @@
         </nav>
     </header>
     <main>
-        <section class="main">
-            <div class="titleContener">
+        <section class="main section">
+            <div class="titleContener imageItems" urlNormal="url(./img/Normal/boy.jpg) 90% 100%/ auto 90% no-repeat, url(./img/Normal/fon.jpg) center /100% 100% no-repeat" urlBad="url(./img/Bad/boy.jpg) 90% 100%/ auto 90% no-repeat, url(./img/Bad/fon.jpg) center /100% 100% no-repeat ">
                 <div class="container h-100">
                     <div class="row align-items-center h-100">
                         <div class="col-lg-6 col-12 mt-5 pt-5">
@@ -73,7 +73,7 @@
                 </div>
             </div>
         </section>
-        <section class="myInfo">
+        <section class="myInfo section" id="myInfoSection">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -88,7 +88,7 @@
                 </div>
             </div>
         </section>
-        <section class="mySkills">
+        <section class=" section mySkills imageItems" id="mySkillsSection" urlNormal="url(./img/Normal/mySkillsImageBk.jpg) 0 0 / auto 100% no-repeat" urlBad="url(./img/Bad/mySkillsImageBk.jpg) 0 0 / auto 100% no-repeat">
             <div class="container">
                 <div class="row">
                     <h2>ЧТО Я УМЕЮ</h2>
@@ -122,8 +122,8 @@
             </div>
         </section>
         
-        <section class="cases">
-            <div class="container">
+        <section class="section cases" id="casesSection">
+            <div class="container h-100">
                 <div class="row">
                     <div class="col-12">
                          <h2>КЕЙСЫ</h2>
@@ -136,7 +136,33 @@
                 </div>
                 <div class="row my-1">
                     <div class="col-12 d-flex justify-content-space">
-                         <img src="./img/CasesImageMain.jpg" class="img-thumbnail" alt="...">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                              <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                              </div>
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <img class="imageItems d-block w-100" onClick="modalImageCaseFocus.apply(this)" src="./img/Bad/CasesImageMain.jpg" srcToggle="./img/Normal/CasesImageMain.jpg" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                  <img class="imageItems d-block w-100" src="./img/Bad/CasesImageMain.jpg" srcToggle="./img/Normal/CasesImageMain.jpg" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                  <img class="imageItems d-block w-100" src="./img/Bad/CasesImageMain.jpg" srcToggle="./img/Normal/CasesImageMain.jpg" alt="...">
+                                </div>
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Предыдущий</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Следующий</span>
+                              </button>
+                        </div>
+                         
                     </div>
                 </div>
                 <div class="row d-none d-lg-flex">
@@ -175,7 +201,7 @@
                 </div>
             </div>
         </section>
-        <section class="cost">
+        <section class="section cost" id="costSection" >
             <div class="container h-100">
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
@@ -185,30 +211,37 @@
                 <div class="row d-flex justify-content-center">
                     <div class="col-12 col-lg-9 offset-xl-0.5">
                         <h3>ТИП САЙТА</h3>
-                        <select name="typeSide" id="" >
-                           <option value="Выберите пункт...">Выберите пункт...</option>
-                            <option value="Москва">Москва</option>
-                            <option value="Самара">Самара</option>
+                        <select name="typeSide" id="costTypeSide" onBlur="calculatorDocument()">
+                           <option value="0">Выберите тип...</option>
+                            <option value="1">Интернет представительство.</option>
+                            <option value="2">Сайт визитка.</option>
+                            <option value="3">Лендинг.</option>
+                            <option value="4">Интернет магазин.</option>
+                            <option value="5">Интернет витрина.</option>
+                            <option value="6">Сервис.</option>
                         </select>
                     </div>
                 </div>
                 <div class="row d-flex justify-content-center">
                     <div class="col-12 col-lg-9 offset-xl-0.5">
                        <h3>ДИЗАЙН</h3>
-                        <select name="typeSide" id="" >
-                           <option value="Выберите пункт...">Выберите пункт...</option>
-                            <option value="Москва">Москва</option>
-                            <option value="Самара">Самара</option>
+                        <select name="typeSide" id="costTypeDesign" onBlur="calculatorDocument()" >
+                           <option value="0">Выберите тип...</option>
+                            <option value="1">Есть уже готовый дизайн.</option>
+                            <option value="2">Работа в паре с вашим дизайнером.</option>
+                            <option value="3">Заказной с нуля.</option>
+                            <option value="4">Шаблоный</option>
                         </select>
                     </div>
                 </div>
                 <div class="row d-flex justify-content-center">
                     <div class="col-12 col-lg-9 offset-xl-0.5">
                        <h3>АДАПТИВНОСТЬ</h3>
-                        <select name="typeSide" id="" >
-                           <option value="Выберите пункт...">Выберите пункт...</option>
-                            <option value="Москва">Москва</option>
-                            <option value="Самара">Самара</option>
+                        <select name="typeSide" id="costTypeSystem" onBlur="calculatorDocument()">
+                           <option value="0">Выберите тип...</option>
+                            <option value="1">ПК</option>
+                            <option value="2">Смартфоны</option>
+                            <option value="3">Смартфоны и ПК</option>
                         </select>
                     </div>
                 </div>
@@ -218,8 +251,8 @@
                         <h4>Стоимость</h4>
                     </div>
                     <div class="col-1">
-                        <h4>0</h4>
-                        <h4>0</h4>
+                        <input type="text" value="_" id="costTypeTime" onBlur="calculatorDocument()" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
+                        <h4 id="costTypeTextCost">0</h4>
                     </div>
                 </div>
                 <div class="row d-flex justify-content-center">
@@ -229,7 +262,7 @@
                 </div>
             </div>
         </section>
-        <section class="statistics">
+        <section class="statistics" id="statisticsSection">
             <div class="parallax-window" data-parallax="scroll" data-image-src="img/statisticsImageMain.jpg">
                 <div class="container statisticsBlock h-100">
                     <div class="row d-flex justify-content-center">
@@ -258,26 +291,68 @@
                 </div>
             </div>
         </section>
-        <section class="reviews animItems">
+        <section class="section reviews animItems" id="reviewsSection">
             <div class="container h-100 reviewsBlock"> 
                 <div class="row d-flex justify-content-center">
                     <div class="col-12 col-lg-8"> 
                         <h2>ОТЗЫВЫ</h2>
                     </div>
                 </div>
-                <div class="row d-flex justify-content-center">
-                    <div class="col-12">
-                        <div id="reviewsImageMain"></div>
+                <div id="carouselExampleDark" class="carousel carousel-dark slide h-75" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
-                    <div class="col-12 col-lg-8">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
-                        facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.</p>
-                        <p><bold>Михаил</bold>, Ген директор ПАО “Газпром”.</p>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-12">
+                                    <div class="imageItems"id="reviewsImageMain"></div>
+                                </div>
+                                <div class="col-12 col-lg-8">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
+                                    facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.</p>
+                                    <p><bold>Михаил</bold>, Ген директор ПАО “Газпром”.</p>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-12">
+                                <div class="imageItems"id="reviewsImageMain"></div>
+                            </div>
+                            <div class="col-12 col-lg-8">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
+                                facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.</p>
+                                <p><bold>Михаил</bold>, Ген директор ПАО “Газпром”.</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                    <div class="carousel-item">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-12">
+                                <div class="imageItems"id="reviewsImageMain"></div>
+                            </div>
+                            <div class="col-12 col-lg-8">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
+                                facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.</p>
+                                <p><bold>Михаил</bold>, Ген директор ПАО “Газпром”.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"  data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Предыдущий</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"  data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Следующий</span>
+                    </button>
+                </div>  
             </div>
         </section>
-        <section class="MYCONTACTS">
+        <section class="section MYCONTACTS imageItems" id="MYCONTACTSSection" urlNormal = "url(./img/Normal/MYCONTACTSImage.jpg) 0 0 / auto 100% no-repeat" urlBad="url(./img/Bad/MYCONTACTSImage.jpg) 0 0 / auto 100% no-repeat">
             <div class="container MYCONTACTSBlock h-100">
                 <div class="row d-flex justify-content-center">
                     <div class="col-12 col-lg-4">
@@ -325,12 +400,38 @@
             </div>
         </section>
     </main>
-        <div class="Maps"></div>
+
+    <div class="Maps"></div>
+    <div class="container modalDialog" id="modalDialogAds">
+        <div class="row h-100 ">
+                <div class="row rowLine" style="height:10%;">
+                    <div class="col-10 header">
+                        Заголовок модального окна
+                    </div>
+                    <div class="col-2 d-flex justify-content-end align-items-center">
+                        <button type="button" class="btn-close" disabled aria-label="Закрыть"></button>
+                    </div>
+                </div>
+                <div class="row justify-content-center align-items-start" style="">
+                    <div class="col-11" style="margin-top: 0; padding-top: 0">
+                       <p>Не опредилился?</p>
+                    </div>
+                    <div class="col-11">
+                       <p> Хочешь узнать соклько стоит твой будуюший сайт?</p>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center align-items-center" style="height:10%;">
+                    <div class="col-8 col-lg-2">
+                        <input type="submit" href="#costSection" onClick="scrollJQueryWorking.apply(this); modalWindowHide.apply(this)" value="Посмотреть">
+                    </div>
+                    
+                </div>
+        </div>
+    </div>
     <script type="text/javascript" src="js/preloader.js"></script>
     <script type="text/javascript" src="js/animated.js"></script>
-    <!--<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script type="text/javascript" src="js/parallax.min.js"></script>
-    <script type="text/javascript" src="js/calculator.js"></script> -->
 </body>
 </html>
