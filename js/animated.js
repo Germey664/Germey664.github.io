@@ -45,12 +45,15 @@ function checkScrollJQuery(){
 }
 function scrollJQuery(){
 	$('nav a').on('click', function() {
-		scrollJQueryWorking
+		scrollJQueryWorking(this);
 	});
 }
-function scrollJQueryWorking(){
+function scrollJQueryWorking(_this = 0){
 	//console.log("scrollJQuery");
-	    let href = $(this).attr('href');
+		if(_this == 0){
+			_this = this;
+		}
+	    let href = $(_this).attr('href');
 	    $('html, body').animate({
 	        scrollTop: $(href).offset().top - $('nav').height()
 	    }, {
